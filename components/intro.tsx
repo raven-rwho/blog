@@ -1,4 +1,5 @@
 import { CMS_NAME } from '../lib/constants'
+import Link from 'next/link'
 
 const Intro = () => {
   return (
