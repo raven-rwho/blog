@@ -7,9 +7,9 @@ const Intro = () => {
       <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         Welcome
       </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        here I'm writing about my experiences and everything that comes to my mind
-      </h4>
+      <Link href="/about">
+          <a className="hover:underline text-5xl md:text-4xl font-bold tracking-tighter leading-tight md:pr-8">About me.</a>
+        </Link>
     </section>
   )
 }
