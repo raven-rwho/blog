@@ -1,13 +1,13 @@
 import Header from '../components/header'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import CV from 'react-cv'
 import Container from '../components/container'
 import Layout from '../components/layout'
 
 export default function AboutPage() {
     const router = useRouter()
 
+    const CV = require('react-cv')
     if (router.isFallback) {
         return <ErrorPage statusCode={404} />
     }
