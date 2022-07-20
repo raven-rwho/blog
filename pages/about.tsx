@@ -3,11 +3,12 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../components/container'
 import Layout from '../components/layout'
+import CV from 'react-cv'
 
 export default function AboutPage() {
     const router = useRouter()
 
-    const CV = require('react-cv')
+
     if (router.isFallback) {
         return <ErrorPage statusCode={404} />
     }
@@ -21,10 +22,7 @@ export default function AboutPage() {
                         title: 'Engineering Director',
                         image: 'https://media-exp1.licdn.com/dms/image/C4D03AQH2eiPhGDQoaw/profile-displayphoto-shrink_800_800/0/1652125523708?e=1663804800&v=beta&t=wblpJCE9mZNH15fUtlnzBP2pJhqMPvrRTHU0ziIhqJk',
                         contacts: [
-                            { type: 'location', value: 'Oranienburg' },
-                            { type: 'linkedin', value: 'https://www.linkedin.com/in/kraussdevelopment/' },
-                            { type: 'twitter', value: 'https://twitter.com/pkatberlin' },
-                            { type: 'github', value: 'https://github.com/raven-rwho/' }
+                        
                         ]
                     }}
                     sections={[
